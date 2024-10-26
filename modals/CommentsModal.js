@@ -19,8 +19,6 @@ const width = Dimensions.get('window').width
 
 import avatar from '../assets/avatar.png'
 
-
-
 const CommentsModal = ({isVisible, setIsVisible, solutionId, solver})=>{
     
     const userId = useSelector(state=>state.authState.userToken)

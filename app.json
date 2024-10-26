@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "globii",
+    "name": "Globii",
     "slug": "globii",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -21,10 +21,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ncube.globii"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "47e5c6b0-ac8e-4cce-8255-9b42a373a88a"
+      }
     }
   }
 }
