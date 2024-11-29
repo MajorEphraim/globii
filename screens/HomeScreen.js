@@ -123,7 +123,7 @@ const HomeScreen = ()=>{
             setIsFetching(true)
             if (user) {
               const uid = user.uid;
-              console.log("USER ", user)
+              //console.log("USER ", user)
                   dispatch(signInUser({userToken:uid, isSignedIn:true}))
                  
                   const res =await fetchFavorites(uid)
@@ -152,7 +152,7 @@ const HomeScreen = ()=>{
         navigation.navigate('Subject',subject)
     }
 
-    console.log("Is fetching", isFetching)
+    //console.log("Is fetching", isFetching)
    
     return(
         <View style={{flex:1}}>

@@ -69,9 +69,6 @@ const signUp = async (username,email, password)=>{
             userId: user.uid,
           });
 
-        await getChosenSubjects()
-
-         
 
         await sendEmailVerification(user)
         alert("Email sent to "+email+" for verification")

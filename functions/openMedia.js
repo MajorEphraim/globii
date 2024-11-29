@@ -27,9 +27,9 @@ const openMedia = async()=>{
     // Explore the result
     //console.log(result);
 
-    if (!result.cancelled) {
+    if (!result.canceled) {
       setPickedImagePath(result.uri);
-      console.log(result.uri);
+      //console.log(result.uri);
     }
         uri = result.assets[0].uri
         name = result.assets[0].fileName

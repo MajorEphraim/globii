@@ -59,19 +59,12 @@ export default function Navigator() {
               return
           if (user) {
             const uid = user.uid;
-            // User is signed in, see docs for a list of available properties
-            // https://firebase.google.com/docs/reference/js/firebase.User
-             // if(user.emailVerified){
                 dispatch(signInUser({userToken:uid, isSignedIn:true}))
                 getDetails()
-                console.log("user ", uid)
-              //}
-            // ...
+           
           } else {
-            // User is signed out
-            // ...
             dispatch(signInUser({userToken:null, isSignedIn:false}))
-            console.log("user is signed out or not connected")
+           
           }
         });
         

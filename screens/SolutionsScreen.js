@@ -51,7 +51,7 @@ const SolutionsScreen = ()=>{
 
     const getSolver = (id)=>{
         const solver = solvers.filter(item=>item.solutionId === id)[0]
-        console.log("SOLsolvers ", solvers)
+        //console.log("SOLsolvers ", solvers)
         return solver
     }
 
