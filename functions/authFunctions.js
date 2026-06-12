@@ -16,17 +16,17 @@ const signIn = async (email, password)=>{
         const userCredential = await signInWithEmailAndPassword(auth, email, password) 
         
         const user = userCredential.user;
-        if (user.emailVerified) {
+        // if (user.emailVerified) {
             await SecureStore.setItemAsync('auth_details',JSON.stringify({userToken:user.uid, isSignedIn:true}));
             await getDetails()
             const favorites = await fetchFavorites(user.uid)
             store.dispatch(updateFavorites(favorites))
             //await getChosenSubjects()
             store.dispatch(signInUser({userToken:user.uid, isSignedIn:true})) 
-        }else{
-            await sendEmailVerification(user)
-            alert("Email not verified, go to your email to verify it")
-        }
+        // }else{
+        //     await sendEmailVerification(user)
+        //     alert("Email not verified, go to your email to verify it")
+        // }
         // ...
     } catch (error) {
         const errorCode = error.code;

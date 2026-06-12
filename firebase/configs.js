@@ -15,13 +15,13 @@ import { getFunctions, httpsCallable } from 'firebase/functions';
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBEA3oUAfIQVBElZqwEpeXcCtYw3yZc7pE",
-  authDomain: "picpica-309f4.firebaseapp.com",
-  projectId: "picpica-309f4",
-  storageBucket: "picpica-309f4.appspot.com",
-  messagingSenderId: "735319738154",
-  appId: "1:735319738154:web:dc2f831e809c5a1264c053",
-  measurementId: "G-MKZZN1CJC9"
+  apiKey: "AIzaSyBJDRft0ou_uSzbKLTIDlE7zygkxdxc2z0",
+  authDomain: "globii-app1.firebaseapp.com",
+  projectId: "globii-app1",
+  storageBucket: "globii-app1.firebasestorage.app",
+  messagingSenderId: "1029631097434",
+  appId: "1:1029631097434:web:55f1da253e49c69b88b663",
+  measurementId: "G-W74PLYRVV2"
 };
 
 // Initialize Firebase
